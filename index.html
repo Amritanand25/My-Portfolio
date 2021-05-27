@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="site-main-wrapper">
+        <button id="mobile-nav-icon" class="mobile-nav-icon">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="mobile-nav">
+            <div>
+                <span class="closenav"><i class="far fa-times-circle"></i></span>
+                <div class="mobile-nav-logo flex">
+                    <p><i class="fas fa-user-tie"></i></p>
+                    <p>Amrit Anand</p>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#ourservices">Services</a></li>
+                    <li><a href="#ourwork">Work</a></li>
+                    <li><a href="#ourblog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <header id="main-head">
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding flex">
+                            <p><i class="fas fa-user-tie"></i></p>
+                            <p>Amrit Anand</p>
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#aboutme">About</a>
+                            <a href="#ourservices">Services</a>
+                            <a href="#ourwork">Work</a>
+                            <a href="#ourblog">Blog</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button onClick="myfun()" class="btn btn-primary btn-contact">Contact</button>
+                    </div>
+                </nav>
+
+                <div class="profile flex items-center justify-between">
+                    <div class="left flex-1">
+                        <div class="amrit-head">
+                            <h6 class="animate__animated animate__backInRight">Amrit Anand</h6>
+
+                            <h1 class="animate__animated animate__backInLeft">I'm a Full-Stack</h1>
+                            <h1 class="animate__animated animate__backInRight"><span> Developer</span></h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quisquam sapiente sunt error
+                            tempora repellendus!lorem10
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, illo?
+                        </p>
+                        <div>
+                            <a href="./image/resume.pdf"><button class="btn btn-secondary">DOWNLOAD CV</button></a>
+                        </div>
+                    </div>
+                    <div class="right flex-1 flex justify-center">
+                        <img src="./image/laptop.jpg" alt="A person having laptop">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="mymodal" class="modal">
+            <div>
+                <div class="modal-content">
+                    <div class="container">
+                        <span class="close" onclick="myclose()"><i class="far fa-times-circle"></i></span>
+                        <div class="heading-up">
+                            <h1 class="section-heading">
+                                <span>Get in </span> touch!!
+                            </h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, consectetur.</p>
+                        </div>
+                        <div class="contact-container">
+                            <div class="contact-container-up-heading">
+                                <h4>Contact Form</h4>
+                            </div>
+
+
+                            <div class="contact-container-up">
+
+                                <div class="contact-container-up-left">
+
+                                    <div class="contact-container-up-left-content1 ">
+
+                                        <div class="contact-container-up-left-content1-left flex-1">
+                                            <form action="/">
+                                                <label for="name">Your Name</label><br>
+                                                <input type="text" name="name"><br>
+                                                <label for="email">Your Mail</label><br>
+                                                <input type="email" name="mail"><br>
+                                                <label for="phone">Your Phone Number</label><br>
+                                                <input type="phone" name="phone">
+
+                                            </form>
+                                        </div>
+                                        <div class="contact-container-up-left-content1-right flex-1">
+                                            <form action="/">
+                                                <label for="commentarea">Your Comment</label>
+                                                <textarea name="commentarea" id="commentarea" cols="30"
+                                                    rows="10"></textarea>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="contact-container-up-left-content2">
+                                        <label for="services">Services</label><br>
+                                        <div class="contact-container-up-left-content2-radio-button">
+                                            <input class="radio" type="radio" id="frontend" name="radio"
+                                                value="frontend">
+                                            <label for="frontend">Frontend</label>
+                                            <input class="radio" type="radio" id="backend" name="radio" value="backend">
+                                            <label for="backend">Backend</label>
+                                            <input class="radio" type="radio" id="fullstack" name="radio"
+                                                value="fullstack">
+                                            <label for="other">Full-Stack</label>
+                                            <input class="radio" type="radio" id="other" name="radio" value="other">
+                                            <label for="other">Other</label>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="contact-container-up-right">
+                                    <div class="contact-icon">
+                                        <div><i class="fas fa-map-marker-alt"></i></div>
+                                        <h5>Matihani, Begusarai</h5>
+                                    </div>
+                                    <div class="contact-icon">
+                                        <div><i class="fas fa-phone"></i></div>
+                                        <h5>+91- 8877058044</h5>
+                                    </div>
+                                    <div class="contact-icon">
+                                        <div><i class="far fa-envelope"></i></div>
+                                        <h5>Hello@25gmail.com</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="contact-container-down">
+                                <button class="btn btn-primary">Send Message</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme" class="about">
+
+            <div class="container flex items-center divamrit">
+                <div class="flex-1 about-me">
+                    <img class="about-me-image" src="./image/amritpic.jpg" alt="Amrit Anand">
+                </div>
+                <div class="flex-1 about-me">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! I'm Amrit Anand</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci id maxime ducimus pariatur
+                        ad
+                        cumque saepe illum nostrum perspiciatis nam quas et reiciendis voluptatibus odit doloremque
+                        tempore
+                        repellendus illo, omnis quia? Numquam libero perferendis obcaecati fugit, distinctio ipsa
+                        accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quidem? </p>
+                    <div class="social flex">
+                        <div><a href="https://www.facebook.com/amritmilindanand.roy/"><i
+                                    class="fab fa-facebook"></i></a>
+                        </div>
+                        <div><a href="https://twitter.com/Amritan95610152"><i class="fab fa-twitter"></i></a></div>
+                        <div><a href="https://www.instagram.com/amrit21oct/"><i class="fab fa-instagram"></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/amrit-anand-496298169/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div><a href="https://www.youtube.com/channel/UCsKPETWTe48ssVkxSVSObGg"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                        <div><a href="https://github.com/Amritanand25"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="ourservices" class="services">
+            <div class="container">
+                <h1 class="section-heading">
+                    <span>Our </span>Services
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatum nostrum.
+
+                </p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                        <h2>Frontend Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, ullam? voluptatum nostrum.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, eum sit libero
+                            repudiandae hic quas.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-database"></i></div>
+                        <h2>Backend Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, ullam? voluptatum nostrum.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quis aperiam rem id laborum
+                            laudantium.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-server"></i></div>
+                        <h2>Fullstack Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, ullam? voluptatum nostrum.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quis aperiam rem id laborum
+                            laudantium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="freelancer">
+            <h1>I Am Available For freelancer.</h1>
+            <p>We provide high standared clean website for your business solution.</p>
+            <a href="./image/resume.pdf"><button class="btn btn-primary">DOWNLOAD CV</button></a>
+        </section>
+
+        <section id="ourpages" class="reviews">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span> Clients</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, minima!</p>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./image/man1.jpg" alt="Man">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima esse ea repudiandae
+                            ad
+                            facilis eligendi optio commodi odit, tempora, eum quibusdam impedit accusantium beatae
+                            assumenda
+                            aliquam officia omnis. Fuga unde laudantium temporibus, ipsa hic veritatis ipsam deleniti
+                            excepturi rem!</p>
+                        <span>- Gregory Hayes, Company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="./image/woman1.jpg" alt="Woman1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima esse ea repudiandae
+                            ad
+                            facilis eligendi optio commodi odit, tempora, eum quibusdam impedit accusantium beatae
+                            assumenda
+                            aliquam officia omnis. Fuga unde laudantium temporibus, ipsa hic veritatis ipsam deleniti
+                            excepturi rem!</p>
+                        <span>- Ayo Ogunseinde, Company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="./image/woman2.jpg" alt="Woman2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima esse ea repudiandae
+                            ad
+                            facilis eligendi optio commodi odit, tempora, eum quibusdam impedit accusantium beatae
+                            assumenda
+                            aliquam officia omnis. Fuga unde laudantium temporibus, ipsa hic veritatis ipsam deleniti
+                            excepturi rem!</p>
+                        <span>- Matheus Ferrero, Company ABC</span>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section id="ourwork" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span> Works</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ullam.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <a href="#main-head"><img src="./image/portfolio.jpg" alt="Screen Shots of Home page"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <a href="https://amritanand25.github.io/amritfreshmeal.github.io/"><img
+                                    src="./image/freshmeal.jpg" alt="Screen Shots of Home page"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <a href="https://mydancewebsite.herokuapp.com/"><img src="./image/amritdanceacedmy.jpg"
+                                    alt="Screen Shots of Home page"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourblog" class="blog">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span> Blogs</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt.</p>
+
+                <div class="card-wrapper flex">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./image/blog1.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            </a>
+                            <span>May 20, 2021</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum optio maxime dolorum minima
+                                sequi suscipit amet ab odit porro, molestiae iste natus fugiat, non explicabo.
+                                Laboriosam
+                                ducimus repudiandae nobis provident!</p>
+                            <button class="read-more btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./image/blog2.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            </a>
+                            <span>May 20, 2021</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum optio maxime dolorum minima
+                                sequi suscipit amet ab odit porro, molestiae iste natus fugiat, non explicabo.
+                                Laboriosam
+                                ducimus repudiandae nobis provident!</p>
+                            <button class="read-more btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+
+            <div class="container">
+                <h1 class="section-heading"> <span>My </span> Skills</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, ullam!</p>
+                <div class="main-skill-wrapper">
+                    <div>
+                        <table>
+                            <tr>
+                                <td class="srno">1.</td>
+                                <td>
+                                    <h3>C++</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">2.</td>
+                                <td>
+                                    <h3>HTML</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">3.</td>
+                                <td>
+                                    <h3>CSS</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">4.</td>
+                                <td>
+                                    <h3>Java Script</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">5.</td>
+                                <td>
+                                    <h3>React Js</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">6.</td>
+                                <td>
+                                    <h3>Node Js</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="srno">7.</td>
+                                <td>
+                                    <h3>Mongo DB</h3>
+                                </td>
+                                <td>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div>
+                <div class="footer-logo">
+                    <p><i class="fas fa-user-tie"></i></p>
+                    <p>Amrit Anand</p>
+                </div>
+                <div class="footer-social">
+                    <div><a href="https://www.facebook.com/amritmilindanand.roy/"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div><a href="https://twitter.com/Amritan95610152"><i class="fab fa-twitter"></i></a></div>
+                    <div><a href="https://www.instagram.com/amrit21oct/"><i class="fab fa-instagram"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/amrit-anand-496298169/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div><a href="https://www.youtube.com/channel/UCsKPETWTe48ssVkxSVSObGg"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                    <div><a href="https://github.com/Amritanand25"><i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="copyright">Copyright 2021 © Amrit Anand. All Right Reserved.</div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+
